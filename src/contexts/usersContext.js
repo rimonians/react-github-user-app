@@ -45,9 +45,7 @@ const UsersProvider = ({ children }) => {
   //   Fetch data
   const fetchData = async () => {
     try {
-      const res = await axios.get(process.env.REACT_APP_API, {
-        headers: { Authorization: `token ${process.env.REACT_APP_TOKEN}` },
-      });
+      const res = await axios.get(process.env.REACT_APP_API);
       dispatch({ type: actions.success, payload: res.data });
     } catch (err) {
       dispatch({ type: actions.error });
