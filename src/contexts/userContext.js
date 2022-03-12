@@ -40,9 +40,7 @@ const UserProvider = ({ children }) => {
   //   Fetch data
   const fetchData = async (value) => {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API}/${value}`, {
-        headers: { Authorization: `token ${process.env.REACT_APP_TOKEN}` },
-      });
+      const res = await axios.get(`${process.env.REACT_APP_API}/${value}`);
       dispatch({ type: actions.success, payload: res.data });
     } catch (err) {
       dispatch({ type: actions.error });
