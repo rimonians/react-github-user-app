@@ -11,13 +11,13 @@ import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="http://rimonians.github.io/react-github-user-app">
       <UsersProvider>
         <UserProvider>
           <Layout>
             <Routes>
-              <Route path="/react-github-user-app" element={<Home />} />
-              <Route path="/react-github-user-app/:username" element={<View />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/:username" element={<View />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
