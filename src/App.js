@@ -16,8 +16,8 @@ const App = () => {
         <UserProvider>
           <Layout>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/:username" element={<View />} />
+              <Route path="/react-github-user-app" element={<Home />} />
+              <Route path="/react-github-user-app/:username" element={<View />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
