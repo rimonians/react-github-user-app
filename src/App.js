@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   return (
-    <BrowserRouter basename="http://rimonians.github.io/react-github-user-app">
+    <BrowserRouter basename="/react-github-user-app">
       <UsersProvider>
         <UserProvider>
           <Layout>
