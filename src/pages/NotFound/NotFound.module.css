@@ -1,0 +1,11 @@
+.notFound {
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notFound p {
+  color: crimson;
+  text-align: center;
+  font-weight: 600;
+}

@@ -1,0 +1,20 @@
+.card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.cardImg {
+  height: 200px;
+}
+.cardImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.cardInfo {
+  padding: 1rem;
+}
+.cardInfo h3 {
+  color: #222;
+  text-transform: capitalize;
+}

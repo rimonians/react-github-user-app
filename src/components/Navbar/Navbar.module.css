@@ -1,0 +1,23 @@
+.navbar {
+  padding: 1rem 5rem;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 9999;
+}
+.navbar a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: dodgerblue;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+.heading {
+  cursor: pointer;
+}
+.heading h3 {
+  position: relative;
+  display: inline-block;
+}
+.heading h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: dodgerblue;
+  z-index: -1;
+  transition: 0.5s;
+}
+.heading:hover h3::before {
+  width: 100%;
+}
